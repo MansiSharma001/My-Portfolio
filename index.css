@@ -1,0 +1,302 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 80px;
+    margin: 0;
+    background-color: #07010c;
+    color: white;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #07010c;
+    padding: 18px 50px;
+    border-bottom: 2px solid #741165;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+
+}
+
+nav a {
+    text-decoration: none;
+    margin: 10px;
+    color: white;
+}
+
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 80px;
+}
+
+.hero-text h1,
+.hero-text h2,
+.hero-text h3 {
+    margin: 0px 30px 0px 0px;
+}
+
+.lp-img {
+    width: 500px;
+    height: 320px;
+    border-radius: 10px;
+}
+
+.github {
+    max-width: 30px;
+    margin: 0px 20px 20px 0px;
+    border-radius: 50%;
+}
+
+.linkedIn {
+    width: 30px;
+    margin: 0px 20px 20px 0px;
+    margin-top: 35px;
+    border-radius: 8px;
+}
+
+.btn-1,
+.btn-2 {
+    text-decoration: none;
+    padding: 10px 25px;
+    margin: 0px 20px 0px 0px;
+    border: 1px solid white;
+    border-radius: 8px;
+    color: white;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: 400;
+}
+
+.hero-text h2,
+.hero-text h3 {
+    color: #e64193;
+    font-weight: 400;
+
+}
+
+.hero-text p {
+    width: 400px;
+    padding: 0px 205px 0px 0px;
+    line-height: 26px;
+}
+
+.btn-1 {
+    background-color: #c42a77;
+    border: none;
+    display: inline-block;
+}
+
+.btn-1:hover {
+    transform: translateY(-3px);
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0px;
+}
+
+.card-1 a {
+    text-decoration: none;
+    border: 2px solid white;
+    border: none;
+}
+
+.card-1 a>img {
+    width: 25px;
+    margin-left: 10px;
+    border-radius: 5px;
+    height: 25px;
+}
+
+.html-img,
+.css-img,
+.js-img,
+.bootstrap-img,
+.jquery-img,
+.rwd-img,
+.github-img {
+    width: 30px;
+
+}
+
+.card-2 ul>li {
+    list-style: none;
+}
+
+#head-about,
+#head-skills {
+    font-weight: 400;
+    font-size: 30px;
+    color: #f700eaee;
+}
+
+#head-skills {
+    margin: 0px 0px 0px 40px;
+}
+
+.card-1 p {
+    width: 390px;
+    line-height: 26px;
+}
+
+.card-1 a {
+    color: #f0e8ef;
+    padding: 10px 20px;
+    background-color: #7c3364;
+    font-size: 18px;
+    border-radius: 8px;
+    margin: 30px 0px 0px 0px;
+}
+
+.card-2 ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-2 ul>li {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    margin: 20px 10px;
+    border-radius: 8px;
+    background-color: #1b1b1b;
+    padding: 10px;
+}
+
+ul>li span {
+    margin-left: 15px;
+}
+
+.header ul>li a:hover {
+    color: #f700eaee
+}
+
+.projects {
+    padding: 80px 0;
+}
+
+.projects-heading {
+    text-align: center;
+    font-size: 40px;
+    color: #f700eaee;
+    margin-bottom: 60px;
+    font-weight: 500;
+}
+
+.project-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    width: 340px;
+    background-color: #181818;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: .4s;
+    box-shadow: 0 0 15px #ffffff14;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px #c42a77;
+}
+
+.project-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.project-card h3 {
+    color: #fff;
+    padding: 20px 20px 10px;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.project-card p {
+    padding: 0 20px;
+    line-height: 28px;
+    color: #ddd;
+}
+
+.project-btns {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.live-btn {
+    background-color: #c42a77;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: .03s;
+}
+
+.github-btn {
+    border: 1px solid white;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: .03s;
+}
+
+.live-btn:hover {
+    background-color: #ff4da6;
+}
+
+.github-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media(max-width:768px) {
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-img img{
+        width: 60%;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    .project-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card {
+        width: 95%;
+    }
+}
