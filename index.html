@@ -13,8 +13,8 @@
 <body>
     <div class="container">
         <div class="header">
+            <h2>Mansi Sharma</h2>
             <nav>
-                <h2>Mansi Sharma</h2>
                 <ul>
                     <li><a href="#Home">Home</a></li>
                     <li><a href="#About">About</a></li>
@@ -29,23 +29,22 @@
             <div class="hero-text">
                 <h3>Hello, I'm</h3>
                 <h1>Mansi Sharma</h1>
-                <h2>Frontend Developer</h2>
+                <h2>I'm a <span id="typing"></span></h2>
 
                 <p>
                     I build responsive, user-friendly and modern websites with clean code and great user experience.
                 </p>
                 <br />
-                <a href="#" class="btn-1">View Projects</a>
-                <a href="#" class="btn-2">Contact Me</a>
+                <a href="#Projects" class="btn-1">View Projects</a>
 
                 <div class="social-media">
-                    <a href="#"><img
+                    <a href="https://github.com/MansiSharma111" target="_blank"><img
                             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJGtP-Pq0P67Ptyv3tB7Zn2ZYPIT-lPGI7AA&s"
-                            alt="gitHub-logo" class="github"></a>
+                            alt="gitHub" class="github"></a>
 
-                    <a href="#"><img
+                    <a href="https://www.linkedin.com/in/mansi-sharma-61244b412/" target="_blank"><img
                             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhjjIrgMvnV2EV3wVWXdD-eQ1FPZaZa-ZhOQ&s"
-                            alt="LinkedIn-logo" class="linkedIn"></a>
+                            alt="LinkedIn" class="linkedIn"></a>
                 </div>
             </div>
 
@@ -55,27 +54,22 @@
             </div>
 
         </section>
-    </div>
 
 
-
-    <section class="cards" id="About">
-        <div class="card-1">
-
+    <section class="about" id="About">
+        <div>
             <h2 id="head-about">About Me</h2>
             <p id="para-about">
-                I'm Mansi Sharma, a frontend developer with a strong foundation in HTML, CSS, JavaScript and modern
-                libraries. I enjoy turning ideas into interactive and responsive web experiences.
+                I'm Mansi Sharma, a frontend developer with a strong foundation in HTML, CSS, JavaScript and modern libraries. I enjoy turning ideas into interactive and responsive web experiences.
             </p>
-
-            <a href="#" class="cv">Download CV<img
-                    src="https://img.freepik.com/premium-vector/download-outline-style-icon-black-isolated-white-background-minimalistic-symbol_8169-643.jpg"
-                    alt="download-icon " class="dwn-icon">
-            </a>
-
         </div>
+        <div class="cv-btn">
+            <a href="#" class="cv-btn">Download CV</a>
+        </div>
+        </section>
 
-        <div class="card-2" id="Skills">
+
+        <section class="skills" id="Skills">
             <h2 id="head-skills">Skills</h2>
             <ul>
                 <li>
@@ -109,7 +103,7 @@
                 <li>
                     <img src="https://camo.githubusercontent.com/d4afd1e2ac5f6c43bb65b908c2ea822a8108dccd18dd0402a57d015a6db28b88/68747470733a2f2f63646e2e776f726c64766563746f726c6f676f2e636f6d2f6c6f676f732f6769746875622d69636f6e2d322e737667"
                         alt="github-image" class="github-img">
-                    <span>GitHub</span>
+                    <span>Git & GitHub</span>
                 </li>
             </ul>
         </div>
@@ -127,7 +121,7 @@
                 <p>Responsive Calculator built using HTML, CSS and JavaScript.</p>
 
                 <div class="project-btns">
-                    <a href="https://mansisharma111.github.io/Calculator/" target="_blank" class="live-btn">Live Demo</a>
+                    <a href=" https://mansisharma111.github.io/Calculator/" target="_blank" class="live-btn">Live Demo</a>
                     <a href="https://github.com/MansiSharma111/Calculator" target="_blank" class="github-btn">GitHub</a>
                 </div>
             </div>
@@ -139,23 +133,57 @@
             <p>Responsive jewellery website clone using HTML, CSS and JavaScript.</p>
 
             <div class="project-btns">
-                <a href="https://mansisharma111.github.io/Tanishq-clone/" class="live-btn">Live Demo</a>
+                <a href=" https://mansisharma111.github.io/Tanishq-clone/" target="_blank" class="live-btn">Live Demo</a>
                 <a href="https://github.com/MansiSharma111/Tanishq-clone" target="_blank" class="github-btn">GitHub</a>
             </div>
         </div>
 
         <div class="project-card">
-            <img src="Images/Portfolio.png" alt="Portfolio">
-            <h3>Portfolio Website</h3>
-            <p>Personal portfolio website showcasing projects and frontend skills.</p>
+            <img src="Images/To-Do-App.jfif" alt="To-Do App">
+            <h3>To-Do App</h3>
+            <p>A responsive To-Do application built using HTML, CSS and JavaScript.</p>
 
             <div class="project-btns">
-                <a href="" class="live-btn">Live-demo</a>
-                <a href="" target="_blank" class="github-btn">GitHub</a>
+                <a href="https://mansisharma111.github.io/To-Do-App/" target="_blank" class="live-btn">Live-demo</a>
+                <a href="https://github.com/MansiSharma111/To-Do-App" target="_blank" class="github-btn">GitHub</a>
             </div>
         </div>
         </div>
     </section>
+
+
+    <section class="contact" id="Contact">
+        <h2>Contact Me</h2>
+        <p>Have a project or job opportunity? Fell free to get in touch.</p>
+
+        <form action="#" id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <input type="text" id="subject" placeholder="subject" required>
+            
+            <textarea rows="6"id="message" placeholder="Your Message" required></textarea>
+
+            <button type="submit">Send Message</button>
+
+            <p id="successMessage"></p>
+
+        </form>
+
+            <div class="contact-info">
+                <p>Email: <a href="mailto:maanisharma1212@gmail.com" target="_blank">maanisharma1212@gmail.com</a></p>
+
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/mansi-sharma-61244b412/" target="_blank">linkedin.com/in/mansi-sharma-61244b412</a></p>
+
+                <p>Location: India</p>
+            </div>
+    </section>
+    
+</div>
+    
+
+    <button id="topBtn" title="Go To Top">^</button>
+    
+     <script src="index.js"></script>
 </body>
 
 </html>

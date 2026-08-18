@@ -1,13 +1,17 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 80px;
-    margin: 0;
-    background-color: #07010c;
+    padding: 80px 0;
+    background: #07010c;
     color: white;
-
+    margin: 0;
 }
 
-nav {
+.container {
+    width:90%;
+    margin: auto;
+}
+
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -16,29 +20,46 @@ nav {
     left: 0;
     width: 100%;
     background: #07010c;
-    padding: 18px 50px;
+    padding: 10px 50px;
     border-bottom: 2px solid #741165;
     z-index: 1000;
     box-sizing: border-box;
 }
 
+.header h2 {
+    color: #fff;
+}
+
 nav ul {
     display: flex;
     list-style: none;
-
+    flex-wrap: wrap;
 }
 
 nav a {
     text-decoration: none;
     margin: 10px;
-    color: white;
+    color: #fff;
+    transition: .3s;
+}
+
+nav ul>li a:hover {
+    color: #f700eaee;
+}
+
+
+nav a.active {
+    color: #ff4d94;
+    border-bottom: 2px solid #ff4d94;
+    padding-bottom: 5px;
 }
 
 .hero {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 80px;
-}
+    margin-top: 50px;
+    justify-content: space-between;
+}   
 
 .hero-text h1,
 .hero-text h2,
@@ -65,14 +86,15 @@ nav a {
     border-radius: 8px;
 }
 
-.btn-1,
-.btn-2 {
+.btn-1 {
     text-decoration: none;
     padding: 10px 25px;
     margin: 0px 20px 0px 0px;
-    border: 1px solid white;
     border-radius: 8px;
     color: white;
+    background-color: #c42a77;
+    border: none;
+    font-size: 18px;
 }
 
 h1 {
@@ -84,42 +106,52 @@ h1 {
 .hero-text h3 {
     color: #e64193;
     font-weight: 400;
-
 }
 
 .hero-text p {
-    width: 400px;
-    padding: 0px 205px 0px 0px;
-    line-height: 26px;
-}
-
-.btn-1 {
-    background-color: #c42a77;
-    border: none;
-    display: inline-block;
+    max-width: 400px;
+    line-height: 28px;
+    font-size: 18px;
 }
 
 .btn-1:hover {
-    transform: translateY(-3px);
+    background: #ff4da6;
 }
 
-.cards {
+.about {
+    margin: 80px 10%;
+    background: #1b1b1b;
+    padding: 30px 30px 70px 30px;
+    border-radius: 8px;
+}
+
+.about p {
+    line-height: 26px;
+    font-size: 18px;
+    word-spacing: 1px;
+    margin-bottom: 50px;
+}
+
+.cv-btn {
     display: flex;
-    justify-content: space-between;
-    padding: 50px 0px;
+    justify-content: center;
+    margin-top: 40px;
 }
 
-.card-1 a {
+.cv-btn a {
     text-decoration: none;
-    border: 2px solid white;
-    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    background: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: #11050d;
 }
 
-.card-1 a>img {
-    width: 25px;
-    margin-left: 10px;
-    border-radius: 5px;
-    height: 25px;
+
+.cv-btn a:hover {
+    background: #111;
+    color: #fff;
 }
 
 .html-img,
@@ -133,60 +165,47 @@ h1 {
 
 }
 
-.card-2 ul>li {
+.skills ul>li {
     list-style: none;
 }
 
 #head-about,
 #head-skills {
     font-weight: 400;
-    font-size: 30px;
+    font-size: 40px;
+    text-shadow: 1px 1px 1px #000000;
     color: #f700eaee;
+    text-align: center;
 }
 
-#head-skills {
-    margin: 0px 0px 0px 40px;
+.skills {
+   padding: 80px 10%;
 }
 
-.card-1 p {
-    width: 390px;
-    line-height: 26px;
-}
-
-.card-1 a {
-    color: #f0e8ef;
-    padding: 10px 20px;
-    background-color: #7c3364;
-    font-size: 18px;
-    border-radius: 8px;
-    margin: 30px 0px 0px 0px;
-}
-
-.card-2 ul {
+.skills ul {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
 }
 
-.card-2 ul>li {
+.skills ul>li {
     display: flex;
     align-items: center;
-    width: 200px;
+    width: 250px;
     margin: 20px 10px;
     border-radius: 8px;
     background-color: #1b1b1b;
+    color: #fff;
     padding: 10px;
+    box-shadow: 10px 10px 10px #000000;
 }
 
 ul>li span {
     margin-left: 15px;
 }
 
-.header ul>li a:hover {
-    color: #f700eaee
-}
-
 .projects {
-    padding: 80px 0;
+    padding: 50px 0;
 }
 
 .projects-heading {
@@ -206,7 +225,8 @@ ul>li span {
 
 .project-card {
     width: 340px;
-    background-color: #181818;
+    background-color: #1b1b1b;
+    color: #fff;
     border-radius: 12px;
     overflow: hidden;
     transition: .4s;
@@ -234,7 +254,7 @@ ul>li span {
 .project-card p {
     padding: 0 20px;
     line-height: 28px;
-    color: #ddd;
+    color: #fff;
 }
 
 .project-btns {
@@ -254,7 +274,7 @@ ul>li span {
 
 .github-btn {
     border: 1px solid white;
-    color: white;
+    color: #fff;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 8px;
@@ -270,6 +290,109 @@ ul>li span {
     color: black;
 }
 
+.contact {
+    margin: 80px 10%;
+    padding: 20px 0;
+    background: #1b1b1b;
+    color: #fff;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.contact p {
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: auto;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 12px 0;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.contact textarea {
+    resize: none;
+}
+
+.contact button {
+    padding: 15px 35px;
+    background-color: #00bcd4;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: .3s;
+}
+
+.contact button:hover {
+    background: #0097a7;
+}
+
+.contact-info {
+    margin-top: 40px;
+}
+
+.contact-info p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.contact-info p>a{
+    text-decoration: none;
+    color: #fff;
+}
+
+#successMessage {
+    color: #00ff00;
+    font-size: 18px;
+    margin-top: 15px;
+    font-weight: 500;
+    text-align: center;
+}
+
+#typing {
+    font-size: 30px;
+    background:linear-gradient(90deg,#ff4d94,#00e5ff);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    font-weight: 500;
+}
+
+#topBtn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    font-size: 35px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: .3s;
+    display: none;
+}
+
+#topBtn:hover {
+    transform: scale(1.1);
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -277,18 +400,24 @@ html {
 @media(max-width:768px) {
     .hero {
         flex-direction: column;
+        margin-top: 80px;
     }
 
     .hero-img img{
-        width: 60%;
+        width: 80%;
     }
 
     .cards {
         flex-direction: column;
     }
 
-    nav {
+    .header {
         flex-direction: column;
+    }
+
+    nav ul {
+        display: flex;
+        flex-wrap: nowrap;
     }
 
     .project-container {
@@ -297,6 +426,38 @@ html {
     }
 
     .project-card {
-        width: 95%;
+        width: 80%;
+    }
+
+    .contact {
+        margin: 50px 20px;
+        padding: 20px;
+    }
+
+    .contact h2 {
+        font-size: 32px;
+    }
+
+    .contact p {
+        font-size: 16px;
+    }
+
+    .contact form {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .contact input,
+    .contact textarea {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 14px;
+        font-size: 16px;
+    }
+
+    .contact button {
+        width: 100%;
+        padding: 14px;
+        font-size: 18px;
     }
 }
